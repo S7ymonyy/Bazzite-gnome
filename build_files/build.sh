@@ -24,4 +24,8 @@ dnf5 install -y tmux gnome-shell gnome-session gnome-session-wayland-session gno
 
 #### Example for enabling a System Unit File
 
+echo "=== GNOME SESSION FILES ==="
+ls -l /usr/share/wayland-sessions/gnome.desktop
+ls -l /usr/share/xsessions/gnome.desktop
+
 systemctl enable podman.socket
