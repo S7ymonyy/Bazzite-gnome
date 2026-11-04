@@ -22,10 +22,8 @@ dnf5 install -y tmux gnome-shell gnome-session gnome-session-wayland-session gno
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-#### Example for enabling a System Unit File
+#### Example for enabling a System Unit F
 
-echo "=== GNOME SESSION FILES ==="
-ls -l /usr/share/wayland-sessions/gnome.desktop
-ls -l /usr/share/xsessions/gnome.desktop
+find /usr/share -name 'gnome.desktop' -print
 
 systemctl enable podman.socket
